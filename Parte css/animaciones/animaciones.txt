@@ -1,0 +1,33 @@
+animation: son parecidas a los transition pero este posee mas 
+    propiedades que se pueden usar y no necesita de hover para poder
+    ser ejecutada la animacion.
+
+    animation-name: es donde se coloca el nombre de la animacion 
+        que se va a usar este nombre se le da a las animaciones 
+        en el @keyframes que es donde se le da todas las caracteristicas 
+        a las animaciones.
+
+    animation-duration: es donde se establece el tiempo que debe 
+        tardar en ejecutarse la animacion.
+
+    animation-iteration-count: es donde se establece la cantidad de 
+        veces que debe ejecutarse la animacion.
+
+    animation-direction: se usa para manejar la direccion en que 
+        se va a mover la animacion.
+
+    animation-fill-mode: es para controlor el comportamiento de la
+        animacion dependiendo del modo sera el comportamiento
+        los modos son: (backwards, forwards, both).
+
+    animation-timing-function: ease, ease-in, ease-out, ease-in-out 
+    tambien se usa en animacion como se usa en transition.
+
+    animation-delay: tambien se usa como en transition.
+
+    Dato: en animation en la parte de @keyframes se debe indicar 
+        desde donde hasta donde funcionara la animacion esto se 
+        puede hacer con las palabras (From / to) o con porcentajes
+        que ban del 0% al 100% en donde se puede usar cualquier porcentaje 
+        que este entre estos dos numeros para insertar un estilo a la 
+        animacion.

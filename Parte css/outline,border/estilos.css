@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    display: block;
+    background: blue;
+    border: blue;
+}
+
+/*muestra los bordes pero sin ocupar o mover el espacio
+    de la caja contenedora u otras cajas*/
+.caja1{
+    outline: 20px solid greenyellow;
+}
+
+/*el espacio que ocupa el border se le suma al espacio predeterminado de la
+    caja contenedora*/
+.caja3{
+    border: 20px solid brown;
+}
+
+/*muestra los borden pero sin exceder el tamaño predeterminado de la caja
+    contenedora, el border que se muestra esta dentro de ese espacio*/
+    .caja4{
+        box-sizing: border-box;
+        border: 20px solid brown;
+    }
+    

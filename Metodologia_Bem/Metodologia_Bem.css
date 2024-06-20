@@ -1,0 +1,16 @@
+/*Metodologia Bem*/
+input{
+    background-color: crimson;
+}
+
+.contact-form input{
+    background-color: aquamarine
+}
+
+.contact-form .contact-form__input--activ{
+    background-color: chartreuse;
+}
+
+.contact-form .contact-form__input{
+    background-color: blue;
+}

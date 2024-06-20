@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100px;
+    font-size: 20px;
+}
+
+.caja1{
+    height: 200px;
+    width: 200px;
+    background: slateblue;
+    transition: background 4s, height 2s, width 3s;
+}
+
+.caja1:hover{
+    background: darkorchid;
+    height: 300px;
+    width: 300px;
+}
+
+a{
+    color: darkred;
+}
+
+a:visited{
+    color: forestgreen;
+}
+
+.active{
+    height: 200px;
+    width: 200px;
+    background: greenyellow;
+}
+
+.active:active{
+    width: 500px;
+    background: indigo;
+    border: 5px solid black;
+    transition: all 3s;
+}
+
+input{
+    margin: 50px;
+    background: burlywood;
+}
+
+input:focus{
+    transition: all 5s;
+    background: cadetblue;
+    width: 250px;
+    height: 250px;
+}
+
+.lang b:lang(en){
+    background: crimson;
+    color: darkgreen;
+}

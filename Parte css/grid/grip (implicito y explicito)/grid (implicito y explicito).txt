@@ -1,0 +1,25 @@
+     ********************************
+     ***grid implicito y explicito***
+     ********************************
+
+grid-explicito: son los elementos que estan dentro de las filas y columnas 
+    que fueron especificadas por nostros dentro del contenedor.
+
+grid-implicito: se refiere a las elementos que estan incluidos dentro 
+    de la reja contenedora pero fuera de las lineas y columnas especificadas
+    son las que sobran y quedan por debajo en el contenedor.
+
+
+   *************
+   *propiedades*
+   *************
+
+grid-auto-(rows - columns): se usa para crear filas o columnas de manera
+    automatica cuando haya grid-implicitos que se generan, por defecto
+    es row pero se puede cambiar a column si se usa el grid-auto-flow.
+
+grid-auto-flow (row - column - dense): esta se usa para cambiar la generacion 
+    implicita y pasar de la que trae por defecto de las filas a las 
+    columnas esto se hace con (row - column) dependiendo el caso.
+    y se usa dense cuando se quiere rellenar los huecos y no se puede
+    hacer con row ni column.

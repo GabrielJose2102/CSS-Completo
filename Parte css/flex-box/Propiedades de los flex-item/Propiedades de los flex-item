@@ -1,0 +1,35 @@
+Uso de las propiedades dentro de los flex-item:
+
+align-self: se usa con las propiedades (flex-start - center - flex-end - stretch - baseline)
+            pero para usarlos dentro de los item y cumplen la misma funciona.
+
+Manejo de Margin dentro de un flex-item: funcionan de manera contraria a como funcionan
+            fuera de los flex-box, esto quiere decir que si damos un margi-top ira hacia
+            abajo y si damos un margin-bottom se ira hacia arriba, se va al lado contrario
+            de lo que indica el margin.
+
+flex-grow: se usa para darle a las cajas el espacio que sobra en la pagina
+si se usa de manera general el espacio se repartira entre todas las cajas
+flex-item, pero si se usa de manera especifica el espacio se sera otorgado 
+solo a las cajas que contengan flex-grow.
+
+flex-basis: su uso es similar al del width solo que este es exclusivos de
+los flex-item y su son mas importantes para estos por lo tanto tiene mas 
+prioridad en la jerarquia y asi esten ambos se tomara en cuenta al flex-basis.
+
+flex-shrink: es la contraparte de flex-grow ya que esta se usa para que 
+la cajas sedan espacio, es decir si se le asigna a una caja el flex-shrink
+de 2 esta caja al momento de reducir la resolucion sedera el doble del 
+espacio que las otras cajas que no lo poseen y debe ser mayor que uno 
+ya que 1 es el valor por default de esta propiedad.
+
+flex: es el acortador para las 3 propiedades (flex-grow - flex-basis - 
+flex-shrink) se usa para que en vez de escribir las 3 separadas solo se
+escriba esta con los 3 parametros.
+
+order: se usa como el z-index pero mueve los flex-item hacia la direccion donde apunte
+el main axis, si el main axis es modificado tambien afecta al order ya que
+para donde apuente el main axis estara el flex-item con el order mas alto 
+y al contrario de donde apunte estara el order con el menor numero.
+
+justify-content: tambien se usa para posicionamiento pero en main axis.

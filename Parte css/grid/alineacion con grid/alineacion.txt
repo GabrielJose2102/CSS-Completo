@@ -1,0 +1,36 @@
+*******************************
+****alineacion usando grid*****
+*******************************
+
+    Para alinear las celdas usamos justify-item y align-item
+
+1) justify-items: se usa para alinear los items en el eje horizontal,
+    lo usamos con las propiedades start, end y center porque la que 
+    trae por defecto es stretch.
+
+2) align-items: se usa para alinear los items en el eje vertical y 
+    tambien se usa con start, end y center por defecto tambien trae 
+    la propiedad stretch.
+
+4) justify-content: se usa para alinear las filas y las columnas 
+    en el eje horizontal.
+
+5) align-content: se usa para alinear las filas y las columnas en el 
+    eje vertical.
+
+    tanto justify-content como align-content poseen las misma propiedades que flex y son: (space-around, space-between, evenly).
+    Pero los item no pueden usar estas propiedades solo los content.
+
+6) justify-self: se usa para alinear las celdas de manera individual en
+    el eje horizontal.
+
+7) align-self: se usa para linear las celdas da manera individual en el 
+    eje vertical. 
+
+  Las dos propiedades son usadas con los valores de (start, end, center).
+
+  el acortador de estas dos propiedades es place-self: y se le da los 
+  dos valores primero align y justify.
+
+9) order: se usa como en flex la celda con el valor order mas alto se 
+    hasta el ultimo lugar segun hacia donde este apuntado en orden.

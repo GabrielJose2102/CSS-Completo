@@ -1,0 +1,25 @@
+Transition: es la transicion que hay de una propiedad a 
+    otra.
+**********************************
+****Propiedades de transition:****
+**********************************
+
+transition-property: se usa para indicar la propiedad a la
+    que se le aplicara transition, se le puede aplicar a todo 
+    con all pero no es recomendable ya que consume recursos
+    inecesarios al momento de cargar la pagina.
+
+transition-duration: se usa para establecer el tiempo que
+    durara la transicion de la propiedad a su nuevo estado.
+
+transition-delay: se usa para establecer un tiempo aparte 
+    para que se ejecute transition-duration primero pasa 
+    el tiempo de transition-delay y despues es que se 
+    ejecuta el transition-duration.
+
+
+transition-timing-function: es una caracteristica que tiene
+    como Propiedades los siguientes elementos:
+    (linear, ease, ease-in, ease-out, ease-in-out) cada uno
+    de estas Propiedades posee una forma de ejecutar la 
+    transicion con velocidades y maneras distintas.

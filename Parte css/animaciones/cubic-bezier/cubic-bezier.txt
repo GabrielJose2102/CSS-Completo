@@ -1,0 +1,4 @@
+animation-timing-function: cubic-bezier: es la curva de compórtamiento
+    de la animacion indica la velocidad que se movera y hacia donde 
+    se movera usando esta curva se puede generar una animacion de
+    rebote y otras animaciones mas.

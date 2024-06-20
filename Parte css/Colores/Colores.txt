@@ -1,0 +1,9 @@
+hay diferentes formas de colocar un color que se llaman:
+
+1.Name: por el nombre del color.
+2.Hexadecimal: es por el codigo del color.
+3.RGB: es por combinacion de los 3 colores red, green, blue.
+4.RGBA: es tambien la combinacion de los 3 colores pero con un elemento 
+        de transparencia del color
+5.HSL: es dependiendo de la saturacion que se desea que tenga el color.
+6.HSLA es con la saturacion y la transparencia que se desea que tenga.

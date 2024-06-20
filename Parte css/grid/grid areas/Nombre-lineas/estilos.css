@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+body{
+    background: radial-gradient(circle,#133,#111);
+}
+
+/*el nombre de las lineas se ponen ya sea las columnas o la filas
+    se les da el nombre en el grid-template los nombres se colocan
+    entre corchetes y denpendiendo la ubicacion de la linea se
+    se coloca por encima o debajo de la medida de la fila o la 
+    columna.*/
+.grid-container{
+    display: grid;
+    grid-template-rows: 
+        [f-line]
+        200px 
+        [s-line]
+        200px 
+        [t-line]
+        200px
+        [f-line];
+    grid-template-columns: 
+        [lines-izquierda]
+        200px 
+        200px 
+        200px
+        [fin-de-main];
+    border: 5px solid #eee;
+    background: #444;
+}
+
+.grid-item{
+    border: 2px solid #fff;
+    color: #fff;
+    background: #656;
+}
+
+/*aqui para usar el nombre de la linea solo se remplaza el numero
+    que se colocaba por el nombre de la linea que deseas reubicar*/
+.grid-item:first-child{
+    background-color: #f00;
+    grid-row: f-line / t-line;
+    grid-column: lines-izquierda / fin-de-main;
+}

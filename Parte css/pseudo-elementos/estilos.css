@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100px;
+    font-size: 20px;
+}
+
+.texto{
+    padding: 20px;
+}
+
+.texto::first-line{
+    color: indigo;
+}
+
+.texto::first-letter{
+    font-size: 2em;
+}
+
+b::before{
+    content: "Bienvenido";
+    color: blue;
+    background: darkgoldenrod;
+}
+
+b::after{
+    content: "la grieta del invocador";
+    color: crimson;
+    background: darkblue;
+}

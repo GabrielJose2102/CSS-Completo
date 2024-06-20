@@ -1,0 +1,18 @@
+se usa para controlar el tamaño de los objetos dentro de los contenedores
+
+contain: es la propiedad por defecto hace que la imagen se ajuste asi tenga
+         que dejar.
+
+cover: hace que el objeto no se deforme por el contenedor sino que cuadra
+       al objeto y si se sale del contenedor recorta la parte que se sale
+
+none: es la ausencia de la propiedad por lo tanto se ajusta la imagen 
+      con la resoluccion original.
+
+scale-down: se queda con la propiedad mas pequeña.
+
+object-position: se usa en conjunto con object-fit de manera que si 
+                 el elemento que esta posicionado dentro del contenedor
+                 esta mal se puede mover con object-position para que
+                 si se necesita que se mueva hacia un lado u otro lo
+                 haga. 

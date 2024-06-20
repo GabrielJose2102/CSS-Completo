@@ -1,0 +1,14 @@
+Entre las otras propiedades de css tenemos:
+
+1) direction: funciona como un tec-align es decir
+    que sirve para acomodar el texto hacia un lado
+    u otro.
+
+2) letter-spacing. se usa para dar espacio entre letras.
+
+3) scroll-behavior: se usa para manejar la forma de hacer scroll
+    en la pagina haciendolo mas suave o mas fuerte.
+
+4) user-select: se usa para manejar la seleccion de textos o elementos 
+    en la pagina, haciendolo que no pueda seleccionar o si depende de 
+    el valor que se le otorgue.

@@ -1,0 +1,60 @@
+¿Que es grip?
+es un modo de diseño de css que se basa que se da con la propiedad 
+display, y se usa para dividir el contenid en celdas, area, columnas y
+filas.
+
+ Caracteristicas que se usan el grip:
+
+1) grip-container: es el contenedor completo de la caja, que al igual
+        que el flex-box se le da la propiedad a el contenedor pero
+        se le aplica los cambios a los elementos que estan dentro.
+
+2) grip-item: son todos los elementos que estan dentro del grip container
+        pero que son hijos directos si no, no son.
+
+3)grip-cell: son todas las celdas que posee el grip-container que se dan
+        segun la cantidad de filas y columnas que haya, dentro de cada 
+        celda se pueden alojar varios grip-item y de la misma manera 
+        puede haber varias celdas y un solo grip-item.
+
+4)grip-tracks(column y row): son la cantidad de filas y columnas que hay 
+        dentro del container, y hay grip-tracks: column y grip-tracks:row,
+        dependiendo de la cantidad que haya de cada una sabremos la cantidad
+        de celdas que tendremos en el container.
+
+5)grip-area: son la union de dos o mas areas que son definidas por 
+        nosotros mismo, para que se considere un area debe de ocupar mas
+        de una celda y el area debe estar ocupada de manera consecuente, 
+        es decir que debe estar en vertical u horizontal no importa cuantos 
+        espacios ocupe pero no deben estar en diagonal.
+        no debe haber cruces, eles, p, ninguna que no abarque un area 
+        cuadrada o rectangula.
+
+6)grip-line(column line y row line): son las lineas que conforman a las
+        filas y columnas del container se cuentas desde la esquina, es 
+        decir desde el borde.
+
+
+        *************************
+        ***propiedades de grid***
+        *************************
+
+a) grid-template (row, column): son donde se crean las filas y columnas
+        aqui se les da las medidas que debe contener cada una, se le 
+        puede dar medidas en (px, em, rem y otras) pero si se quiere
+        que se reparta el espacio sobrante se le da fr que funciona
+        como el flex-grow.
+        Para no tener que escribir tantas veces haya columnas y filas
+        se usa "repeat(nveces tamaño del elemento).
+        Este se le aplica al contenedor
+
+        Estos se le aplican al item
+b) grid-gap (row, column): el grip-gap solo es la abreviatura pero se 
+        usa el row y el column antes del gap si se quiere usar uno en 
+        especifico y es para separar las columnas y filas entre ellas,
+        pero no se separan de los bordes de la reja que representa el 
+        contenedor. 
+
+c) grid-(row, column)-(start, end): se usa para indicar desde que linea 
+        hasta que linea abarca ya sea una fila o una columna. y su acortador
+        es grid-(row, column).

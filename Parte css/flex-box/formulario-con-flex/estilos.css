@@ -1,0 +1,120 @@
+*{
+    font-family: 'sen', sans-serif;
+    font-weight: 100;
+}
+
+body{
+    background-color: #000;
+}
+
+/*contenerdor del formulario div 
+    propiedad flex, alineacion de los item, flex-wrap para posicionar en 
+    resolucion movil, justify-content para posicionar en el main axis
+    */
+.flex-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #222;
+    margin: 50px 50px;
+    padding: 20px;
+    border: 14px solid transparent;
+    outline: 3px solid #094;
+}
+
+/*aqui se le agrago  un minimo de ancho, un flex grow de 1 para darle 
+    es espacio sobrante, se alineo al centro, padding que deben tener los
+    elementos y un order de 5 para posicionar despues de la imagen por 
+    que tiene un order de 2*/
+.form{
+    min-width: 50%;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 5;
+}
+
+/*estilos de los input dentro del from*/
+.form__input{
+    width: 80%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid #094;
+    background: transparent;
+    color: #fff;
+}
+
+/*Comportamiento de los input al hacer focus de cada uno de ellos
+    background: linear-gradient para darle un estilo entre dos colores
+    como aqui es transparente y negro*/
+.form__input:focus{
+   background: linear-gradient(to bottom, transparent, #111);
+   outline: none;
+   border-bottom: 3px solid #5f9;
+}
+/*altura del text area y se le quito el resizable*/
+.form textarea{
+    min-height: 100px;
+    resize: none;
+}
+
+/*contenedor externo de la imagen se le dio el display: flex y un 
+    min - max de ancho y tambien se le agrago un order de 2 para que se 
+    posicione antes que el formulario. */
+.form-img{
+    flex: 1;  
+    display: flex;
+    padding: 10px;
+    min-width: 200px;
+    max-width: 400px;
+    order: 2;
+}
+
+/*el segundo div de la imagen se le agrego el padding*/
+.form-img div{
+    padding: 10px;    
+}
+
+/*el img-container que esta entre el div externo y el div interno se le     
+    da el margin auto para centrar la imagen*/
+.img-container{
+    margin: auto;
+}
+
+/*el div interno de la imagen aqui se le dio estilo de bordes, fondos
+    alineacion y padding */
+.img-container div{
+    background: #094;
+    border-radius: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+/*aqui el se le dio el ancho que ocupara la imagen y el margin que tendra*/
+
+.form-img img{
+    width: 100%;
+    margin: auto;
+}
+
+/*aqui se le dio estilo al boton de envio dependiendo del estado en que se 
+    encuentre el boton (normal, hover, focus, active)*/
+.form input[type="submit"]{
+    background-color: #094;
+    border-bottom: none;
+    padding: 12px;
+}
+
+.form input[type="submit"]:hover{
+    background-color: #072;
+}
+
+.form input[type="submit"]:focus{
+    background-color: #094;
+}
+
+.form input[type="submit"]:active{
+    background: linear-gradient(to bottom, transparent, #072);
+}

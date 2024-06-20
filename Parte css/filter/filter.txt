@@ -1,0 +1,44 @@
+filter: se usa para darle filtros a las imagenes que se colocan en 
+    pantalla.
+
+    filter es igual que transform que se puede colocar varias Propiedades
+        en el filter de una sola vez. 
+
+    Propiedades de filter: 
+
+1) filter: blur: se usa para desenfocar la imagen dependiendo de la
+    medida que se le de.
+
+2) filter: brightness: se usa para darle brillo a la imagen o oscurecerla
+    siendo 0 nada de brillo y 1 el brillo por defecto de la imagen 
+    si se le quiere dar mas brillo a la imagen se debe aumentar por encima
+    de 1. 
+
+3) filter:contrast: es para darle contraste a la imagen y funciona casi igual a 
+    brightness y no funciona igual al saturate porque el contrast muestra
+    mas el contraste entre los colores.
+
+4) filter:drop-shadow: se usa para darle sombra a las imagenes 
+    transparentes a diferencia del box- que le da la sombra al
+    contenedor de la imagen este le da la sombra a la imagen 
+    directamente.
+
+5) filter:grayscale: se usa para manejar la escalas de gris 
+     se puede manejar por porcentaje.
+
+6) filter:hue-rotate: se usa para manejar la gama de colores se usa
+    con radianes, grados y radianes.
+
+7) filter:invert: se usa para invertir los colores se maneja por 
+    porcentajes.
+
+8) filter:opacity: para controlar la opacidad de la imagenes se 
+    maneja de por numeros empezando en 1 que es por defecto y 0 
+    es la transparencia.
+
+9) filter:saturate: se usa para controlar la saturacion de los colores 
+    haciendolo que llegue al maximo del color se maneja por porcentaje
+    y es diferente al contrast por que saturate lleva al punto mas
+    fuerte del color.
+
+10) filter:sepia: es para convertirlo en sepia.

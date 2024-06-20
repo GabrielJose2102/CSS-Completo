@@ -1,0 +1,13 @@
+Uso del normalize para que la pagina vuelva a los valores
+por defecto del navegador y de esa manera implementar al 100%
+el CSS.
+
+es importante usar con el selector de todo: 
+	
+	box-sizing: border-box
+	padding: 0;
+	margin: 0;
+
+con el selector de img:
+	
+	max-width: 100%

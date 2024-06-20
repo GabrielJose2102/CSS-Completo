@@ -1,0 +1,17 @@
+Variables en css: las variables son un espacio en memoria donde se
+    puede almacenar informacion que se usara en el contenido ya
+    sea de manera de atributos, condiciones o caracteristicas.
+
+    para crea una variable en css se debe usar:
+        root:{
+            --nombre-de-la-variable: atributo a guardar;
+        }
+    
+    y para usarla se hace con:
+        var(nombre-de-la-variable) dentro de la propiedad donde se
+        quiera usar dicha variable.
+
+    la variable se debe crear ya sea en uan etiqueta que este 
+    relacionada con la etiqueta que posee la propiedad o fuera de 
+    cualquier etiqueta lo que quiere decir que es una variable 
+    global.

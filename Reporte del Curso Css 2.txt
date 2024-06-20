@@ -1,0 +1,208 @@
+
+        ***********
+        *** CSS ***
+        ***********
+
+
+        __ Display __
+
+La propiedad "Display" Se encarga de modificar el comportamiento de las cajas, no de la forma en que interactuan entre ellas sino que en la forma que que interactua la caja con el entorno, si la caja ocupa su linea completa como block o si solo ocupa un espacio suficiente para su contenido y puede haber mas cajas que le sigan en la misma linea, aprate de esto hay mas propiedades del Display que pueden otorgar mas caracteristicas a la caja tanto de como se comporta por fuera como por dentro.
+
+
+0.none : Es la ausencia de la propiedad, una caja con "Display none" no se ve en pantalla.
+
+
+1.Block : Esta propiedad hace que la caja ocupe todo el espacio del que dispone a lo ancho asi su contenido no lo necesite y si hay otra caja no puede estar a un lado de la caja con block, debe estar abajo la caja.
+
+
+2.Inline : Hace que la caja solo ocupe el espacio del tamaño de su contenido, por esto si llega haber mas cajas puede compartir el espacio en la misma linea con esa o esas cajas que halla hasta el final de esa linea una a lado de otra.
+
+
+3.Inline-block : Esta tiene caracteristicas de las otras dos propiedades como lo son Block e Inline, pero este se diferencia del block por que a esta propiedad si se le puede dar un ancho y alto a la caja y asi podemos controlar el espacio que ocupa, es decir que se comporte como bloque pero que se pueda ajustar el tamaño a su contenido.
+
+
+4.Table (no se usa ya) : Hace que la caja se comporte como tabla.
+
+
+5.Inline-Table (no se usa ya) : Se comportara como Tabla en linea.
+
+
+6.List-Item (no se usa ya) : Hace que los elementos que estan dentro de la caja salgan en modo de lista.
+
+
+7.Table-Cell (no se usa ya) : Hace que se comporte como cada una de las celdas de una tabla.
+
+
+8.Table-Row (no se usa ya) : Se comporta como cada una de las filas de la tabla.
+
+
+9.Table-Column (no se usa ya) : Se comporta como cada una de las columnas de la tabla.
+
+
+10.Flex : Se usa para ayudar a distribuir el espacio que hay entre los items de una caja, asi de manera flexible poder mover los item y posicionarlos de la manera que mejor nos paresca.
+
+Inline-Flex :
+
+
+11.Grid : Permite alinear los elementos en filas  columnas y de esta forma podemos dividir la pagina en areas donde podremos manejas el tamaño y posicion de las cajas o elementos html.
+
+Inline-Grid :
+
+
+
+        __ OverFlow __
+
+Es un acortador de las propiedades : (OverFlow-x, OverFlow-y), asi que si es necesario se puede aplicar sus propiedades en solo un eje ya sea en x o y.
+
+Se usa para controlar lo que sobra de la caja contenedora, a esto se le puede aplicar OverFlow y se controla esto dependiendo de la propiedad que se le de con el over OverFlow.
+
+La propiedad por defecto de OverFlow es visble.
+
+
+Propiedades del OverFlow : 
+
+1.Auto : Detecta si el contenido se sale de la caja, entonces contiene dentro de la cajas todo lo que se sale y coloca una barra para scrolear el contenido.
+
+
+2.Scroll : A diferencia de Auto Scroll coloca la barra de scrolear asi no sea necesario y la cola en los ejes (x, y), no necesita detectar si el contenido se sale de la caja contenedora para colocar las barras del scroll.
+
+
+3.Hidden : Oculta el contenido que se sale de la caja, es como si lo cortara pero solo es la parte que se sale de la caja.
+
+
+
+        __ Float __
+
+Ubica un elemento y lo posiciona a lado izquierdo o derecho del contenedor, permitiendo que los elementos de textos y los elementos en linea se posicionen a un lado del elementos con float y dependiendo del lado al que se mueva el elemento los demas elementos ya sean inline o textos se ocomodaran a su lado envolviendo al elemento que se le aplico float.
+
+1.float: left : Flota ala elemento al lado izquierdo del contenedor y hace que los otros elementos si son de textos o elementos en linea se ajusten a el elementos con float.
+
+
+2.float: right : Flota ala elemento al lado derecho del contenedor y hace que los otros elementos si son de textos o elementos en linea se ajusten a el elementos con float.
+
+
+3.float: none : Es la ausencia de esta propiedad.
+
+
+4.float: inline-start : Hace flotar el elemento al inicio de la linea del contenedor.
+
+
+5.float: inline-end : Hace flotar el elemento al fin de la linea del contenedor.
+
+
+
+        __ Pseudo-Elementos __
+
+Son un mecanismos para acceder a partes del HTML que no tienen asociado un nodo en el DOM. Estos elementos pueden ser la primera  Linea de un parrafo o la primera letra, un texto seleccionado por el usuario, pero tambien swon una forma de introducir un contenido antes o despues de un elemento y esto lo hacemos con (before y after).
+
+Los Pseudo-elementos se aplican a los elementos, para esto se coloca el elementos y luego se le agrega el Pseudo-elemento para seleccionar una caracteristica especifica de ese elementos.
+
+
+::first-line : (Este elemento si forma parte del DOM) (No funciona en los elmentos inline), Se usa pra seleccionar la primera linea de un parrafo y asi poder editarla de manera individual, no importa si cambia el tamaño de la pagina y esto afecta a la linea ya solo seleccionara a las letras que conformen la primera linea sin importar si estos elementos cambian de cantidad.
+
+
+::first-letter : (Este elemento si forma parte del DOM) (No funciona en los elmentos inline), Se usa parecido a ::first-line solo que esta propiedad solo selecciona a la primera letra de la primera linea y asi poder aplicar estilos css de manera individual solo a esa letra.
+
+
+::placeholder : Se usa para seleccionar el texto de ejemplo que se coloca en los input text para poder aplicarles estilos css.
+
+
+::selection : Se usa para agregar estilos css a un texto seleccionado por el usuario con el mouse y este Pseudo-elemento se comporta como un elemento en linea.
+
+
+::before : Cuando lo aplicamos, before se crea como si fuera un hijo del elemento al que se le aplica y requieren de la propiedad content.
+
+Se usa para agregar contenido antes de un elementos que especifiquemos, para esto colocamos el elemento mas el Pseudo-elemento before y podemos agregar el contenido antes de ese elemento.
+
+Este Pseudo-elemento no cuenta como parte del DOM asi que su contenido n se puede seleccionar con el mouse y el contenido dentro del content que se le coloque no puede haber etiquetas ya que la interpreta como texto normal.
+
+
+
+::after : Cuando lo aplicamos, after se crea como si fuera un hijo del elemento al que se le aplica y requieren de la propiedad content.
+
+Se usa para agregar contenido despues de un elementos que especifiquemos, para esto colocamos el elemento mas el Pseudo-elemento after y podemos agregar el contenido despues de ese elemento.
+
+Este Pseudo-elemento no cuenta como parte del DOM asi que su contenido n se puede seleccionar con el mouse y el contenido dentro del content que se le coloque no puede haber etiquetas ya que la interpreta como texto normal.
+
+
+
+        __ Pseudo-Clases __
+
+Se trabajan de manera similar a los Pseudo-Elementos, es decir tambien se aplican a un elementos, pero la diferencia es que las Pseudo-Clases no selecciona una caracteristica especifica del elemento sino que se usan para escuchar un evento, se ejecuata su codigo mendiante el evento al cual esten enlazada.
+
+
+:hover : Se usa para que se ejecute los cambios en el estilo cuando el mouse pasa por encima del elemento con esta Pseudo-Clases y sirve para todos los elementos a los cuales se le puede modificar los estilos al momento que pasa el evento el tienpo de ejecucion se puede modificar con la propiedad transition y transform.
+
+
+:link : Se usa para para aplicar estilos css a un link que no ha sido visitado, si el link es visitado ya no se aplican los estilos.
+
+
+:visited : Se usa para para aplicar estilos css a un link que ya fue  visitado, si el link no se ha visitado antes no se aplican los estilos solo si ya sea visitado antes.
+
+
+:active : Se ejecuta cuando se deja presionado con el click al elemento que se le otorgo esta clase y mientras se mantenga presionado el elemento se aplicaran los estilos css que posea esta Pseudo-Clase si de deja de presionado el elemento vuelve a sus estilos anteriores.
+
+
+:focus : Se usa mas que todo con los input ya que se evento se activa cuando se el elemento esta seleccionado con un click que se hace el focus sobre el input por eso no es necesario que se mantenga el click presionado, con solo darle una vez es suficiente y los estilos de la Pseudo-Clase se ejecutaran hasta que se haga focus sobre otro elemento fuera del elemento con focus.
+
+
+:lang() : Es una funcion la cual requiere que se le pase un parametro, se usa para modiificar el texto de un contenedor lo puede modificar dependiendo de el lenguaje para esto se le debe dar a la etiqueta donde esta el texto un especificador de lenguaje (lang="en") con la abreviatura del lenguaje y en el documento css se le pasa como parametro la misma abreviatura para solo el texto con el lenguaje especificado cambie sus estilos.
+
+
+
+        __ Object-Fit __
+
+Es una propiedad que principalmente se aplica a las imagenes, se usa pra modificar la resolucion de las mismas, de esta forma podemos ajustar las imagenes dentro del contenedor para que no se deforme la imagen y se mantenga con una resolucion adecuada. 
+
+
+1.contain : Es la propiedad que trae por defecto el Object-Fit y se usa para contener la imagen y si el contenedor hace que se deforme la imagen ajusta la imagen en medio y deja el espacio necesario para cuadrar dentro del contenerdo y ajustar tanto el width como el heigth de la imagen y la imagen no ocupara todo el espaciodel contenedor sino que sus cuatro lados seran ajustaran y dejara el espacio 
+sobrante del lado que sea necesario.
+
+
+2.cover : Se usa para que la imagen se ajuste al contenedor al contrario del contain que ajusta la imagen independientemente del contenedor esta propiedad ajusta la imagen si el contenedor el mas grande agranda la imagen para que sea igual de los cuatro lados y recorta los espacio que sobre por ejemplo si el contenedor es de 300x400 hace la imagen de 400px x 400px y del lado del contenedor que es de 300px recorta la imagen 100px.
+
+
+3.none : Es la ausencia de la propiedad y deja la resolucion de la imagen original.
+
+
+4.scale-down : Escoje la resolucion que mas le convenga entre contain y none dependiendo del contenedor si contain es mas pequeño usa contain y si la resolucion original de la imagen es mas pequeña usa none, explora esas dos y se queda con la mas pequeña.
+
+
+
+        __ Object-Position __
+
+Se usa para mover las imagenes a las cuales ya se le aplico el Object-Fit cover y mostrar mas la parte de la imagen que se le indique ya sea left, rigth, top, bottom dependiendo de la que se le de mostrara mas ese lado de la imagen el cual por el cover estaba siendo ocultada por salirse del contenedor.
+
+Tambien se puede mver la imagen con medidas especificas como (px, em, etc).
+
+
+
+        __ Cursor __
+
+Se usa para cambiar la forma del cursor al posicionarse en un elemento especifico, de esta manera el cursor cambiara su forma a la que se le indique cada vez que se posicione sobre el elemento que se le aplico la propiedad cursor.
+
+Link de la lista de formas de cursores : https://aprende-web.net/css/css9_1.php
+
+
+
+        __ Colores en css __
+
+En css colores se pueden colocar de diferentes formas las cuales no ayudaria ya que segun las reglas del navegador interpretara el color de una forma diferente si lo colacamos por su nombre que por esto hay diferentes formas mas especificas para colocar el color que queremos y que sea interpretado de la misma forma por todos los navegadores.
+
+
+1.nombre : Es el nombre normal en ingles del color.
+
+
+2.rgb : Es la cantidad de color que tendra de red(rojo)-green(verde)-blue(azul) que es lo que significa rgb.
+
+
+3.rgba : Es igual al rgb solo que se le grega un parametro mas red(rojo)-green(verde)-blue(azul)-alpha(alfa que viene siendo la transparencia del color) que es lo que significa rgba.
+
+
+4.hexadecimal : Es el codigo del color y dependiendo de el valor que se le de a los colores primarios que son (rojo-verde- azul), la combinacion de estos colores formas los demas colores que existen y estos valores van de (0 a f) siendo en 0 la ausencia del color y la f el maximo de ese color y el color se crea dando uno o dos valores si se quiere ser mas especifico de cada uno de los tres colores primarios el codigo debe llevar un # antes de los valores.
+
+
+5.hsl : Es otra forma de representar un color es el hsl que significa Hue (tono), Saturation (saturacion) y Lightness (luminosidad).
+
+6.hsla : Es igual al hsl pero se le agrega el valors de transparencia
+Hue (tono) - Saturation - (saturacion) - Lightness (luminosidad) - alpha (transparencia).

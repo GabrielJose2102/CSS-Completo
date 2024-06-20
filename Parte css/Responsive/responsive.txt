@@ -1,0 +1,3 @@
+Responsive: es el manejo de la en diferentes dispositivos de esta manera
+            la resolucion de la pantalla se ajusta al tamaño del dispositivo
+            para asi hacer mas optimo la navegacion por la pagina.

@@ -1,0 +1,2 @@
+Se uas para modificar el estilo del cursor dependiendo de las aciones
+que este haga.

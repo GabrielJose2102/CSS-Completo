@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.flex-container{
+    display: flex;
+    height: 25vh;
+}
+
+.flex-item {
+    background-color: #456;
+    color: white;
+    text-align: center;
+    min-width: 120px;
+    height: 100px;
+}
+
+/*Uso de margin dentro de los flex-box*/
+.orange{
+    background-color: orange;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.green{
+    background-color: green;
+    margin-bottom: auto;  
+    margin-top: auto;
+    align-self: flex-start;  
+}
+
+/*Uso de flex-wrap para hacer que cuando el elemento sobrepase el ancho
+de la pantalla baje a la otra linea */
+.flex-container2{
+    display: flex;
+    height: 25vh;
+    flex-wrap: wrap;
+}
+
+/*aqui se uso el flex-grow para las 3 cajas contenedoras esto se usa para
+    repartir el espacio que sobra en la pagina entre las cajas que contengan
+    el flex-grow y dependiendo del numero que tengan sera la partes de 
+    espacio que le corresponda.*/
+.uso-flex-item{
+    background-color: #456;
+    color: white;
+    text-align: center;
+    min-width: 250px;
+    height: 100px;
+    color: black;
+    flex-grow: 1;
+    width: 300px;
+}
+
+/*se uso la propiedad order que es como z-index pero se orienta dependiendo
+    hacia donde este apuntando el main axis*/
+.blue{
+    background-color: blue;
+    /*flex-grow: 1; si lo usamos en un item en particular todo el espacio 
+        sobrante lo abarcara es item*/
+        order: 200;
+}
+
+/*aqui se uso flex-basis que es como usar width pero para flex-item y 
+    tiene mayor prioridad
+  tambien se uso flex-shrink que el contrario de flex-grow y se usa para
+    que las cajas sedan espacio a medida de que se reduce la resolucion
+    flex-shrink se nota mas su uso sin la propiedad flex-wrap en ejecucion*/
+.yellow{
+    background-color: yellow;
+    flex-basis: 400px;
+    flex-shrink: 2;
+    order: 2;
+}
+
+.red{
+    background-color: red;
+    order: 20;
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100px;
+    font-size: 20px;
+}
+
+.caja{
+    border: 3px solid black;
+    margin: 25px;
+    width: 800px;
+    height: 800px;
+    position: relative;
+    display: block;
+}
+
+img{
+    display: block;
+    margin: 35px 10px;
+    border: 2px solid red;
+    width: 250px;
+    height: 150px;
+}
+
+.lee{
+    object-fit: contain;
+}
+
+.lucian{
+    object-fit: scale-down;
+}
+
+.viego{
+    object-fit: none;
+    object-position: right;
+}
+
+.kayn{
+    width: 400px;
+    object-fit: cover;
+    object-position: top;
+}

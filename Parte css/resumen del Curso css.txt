@@ -1,0 +1,75 @@
+********************************
+*****Resumen del curso css******
+********************************
+
+--porpiedades--
+
+1. outline - border: se usan para los bordes de las cajas 
+   dependiendo de la forma en la que se quiera que ocupe el 
+   espacio se usa uno u otro.
+
+2. background: se us para los fondos de las cajas (cambiar el 
+   color o poner una imagen), entre otras cosas.
+
+3. width - height: se usa para controlar el tama�o de ancho y
+   largo de las cajas.
+
+4. font: se usaa para dar estilos a las fuentes (letras) ya sea
+   cambiar el color, la tipografia oel tama�o entre otros.
+
+5. position: se usa para controlar la psicion de las cajas para
+   esto hay varias propiedades como lo son:
+  
+  a. relative: si respeta el espacio que ocupa.
+  b. absolute: quita por completo el espacio que ocupa.
+  c. fixed: es casi igual que absolute pero se queda fija en la
+     pantalla al hacer scroll.
+  d. stick: si repeta el espacio como relative y tambien se 
+     queda fija en pantalla como fixed.
+  e. z-index: se usa para darle prioridad a que caja esta por
+     encima de otra.
+  f. (top, left, down y right): se usa para mover hacia uno
+     de esos puntos la caja segun lo que se separe de dicho
+     punto.
+
+6. Display: se usa para dar el comportamiento a la caja ya sea
+   de bloque, enline, flex, entre otros.
+
+7. float: se us para hacer flotar las cajas en la pagina y asi
+    darle movimiento por toda la pagina.
+
+8. box-model: se refiere al (padding, margin, border)
+   es el espaicio que que se maneja dentro y fuera de la caja.
+
+9. object-fit: se usa para establecer la forma de que una imagen
+   o icono se se acomada dentro de un contenedor, la resolucion
+   el espacio que ocupa.
+
+10. overflow: se usa para mover los objetos dentro se su contenedor
+    incluso a un espacio que no es visible, y esta propiedad
+    se aplica al contenedor.
+
+11. pseudo-clases: se usan para capturar eventos y dependiendo 
+    de el evento se dara estilo al elemento.
+
+12. pseudos-elementos: hay diferentes tipos de pseudo-elementos
+    unos se usan para darle estilo en especifico a ciertos elementos
+    otros pa agregar contenido a una etiqueta que la lo contiene
+    puede ser antes o despues del contenido original y asi entre otros
+    usos que hay para los pseudo-elementos.
+
+13. Responsive: es cuando adaptamos una pagina para que funciones con
+                distintas resoluciones ya sea en pc como en table, celular
+                u otro dispositivo, la pagina adapta su tamaño e incluso 
+                su formato visual dependiendo de la resolucion del 
+                dispositivo.
+
+14. Flex-box:  Contendor y contenido   
+               flex Container - flex Item
+               Main Axis (Main Star - Main-End)
+               Cross Axis (Cross-Star - Cross-End)
+
+               El flex-box es una propiedad que se le da al contenedor pero
+               que afecta es al contenido que esta dentro y este solo afecta 
+               a los hijos directos del contenedor no a los nietos ni demas
+               decendencia de la caja contenedora.

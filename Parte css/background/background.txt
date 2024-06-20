@@ -1,0 +1,31 @@
+background: se usa para manejar los fondos de los objetos ya sea 
+    dando colores o imagenes.
+
+    Propiedades de background:
+
+1) background-image: se usa para colocar una imagen de fondo del
+    objeto proporcionando la url de dicha imagen.
+
+2) background-size: se usa para manejar el tamaño de la imagen que 
+    se coloco de fondo del objeto. con los valores (cover, contain) 
+    entre otros.
+
+3) background-repeat: esta se usa para manejar la repeticion del 
+    fonde que se coloco con (repeat o no-repeat).
+
+4) background-clip: se usa para ajustar la imagen de fondo o 
+    recortarla si es necesario ya sea en el borde, el contenido 
+    o el padding con (content-box, border-box, padding-box).
+
+5) background-origin: funciona parecido a background-clip pero este
+    no recorta la imagen si no que la ajusta desde el punto donde 
+    se le indica ajustando su tamaño dependiendo el espacio que 
+    le hallan proporcionado.
+
+6) background-position: se encarga de posicionar las imagen dentro del 
+    contenedor con los valores de (left, rigth, center, top, bottom).
+
+7) background-attachment: se usa para darle efectos a la imagen de fondo
+    con (local, scroll, fixed, inherit) con este ultimo se genera un efecto de 
+    la imagen fija en la pagina y al hacer scroll funciona como una
+    ventana que pasa sobre la imagen.

@@ -1,0 +1,87 @@
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+body{
+    background: radial-gradient(circle,#fff,#bbb);
+    padding: 15px;
+}
+
+/*uso de min y max content que usamos para otorgar un minimo y 
+    un maximo al contenido de la caja contenedora de display grid*/
+.grid-container{
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 3px solid #000;
+    background: #333;
+    grid-auto-flow: dense;
+    height: 680px;
+    /*
+    justify-content: center;
+    align-content: center;
+    */
+    /*
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    */
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-item{
+    border: 1px solid #000;
+    background: #999;
+    font-size: 30px;
+    padding: 50px;
+}
+
+.grid-item:first-child{
+    justify-self: start;
+    align-self: start;
+    /*place-self: start end;*/
+    background: red;
+}
+
+.grid-item:nth-child(2){
+    background: slateblue;
+}
+
+.grid-item:nth-child(3){
+    justify-self: end;
+    align-self: start;
+    background: red;
+}
+
+.grid-item:nth-child(4){
+    justify-self: end;
+    background: slateblue;
+}
+
+.grid-item:nth-child(5){
+    background: springgreen;
+}
+
+.grid-item:nth-child(6){
+    justify-self: start;
+    background: slateblue;
+}
+
+.grid-item:nth-child(7){
+    justify-self: start;
+    align-self: end;
+    background: red;
+}
+
+.grid-item:nth-child(8){
+    background: slateblue;
+}
+
+.grid-item:nth-child(9){
+    justify-self: end;
+    align-self: end;
+    background: red;
+}

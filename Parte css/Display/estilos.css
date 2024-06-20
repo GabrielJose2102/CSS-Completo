@@ -1,0 +1,11 @@
+/*Con display se usa para establecer si una caja se comporta como un
+    elemento en bloque o en linea entre otros*/
+div{
+    background-color: chartreuse;
+    width: 150px;
+    height: 150px;
+    border: 10px solid black;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+}

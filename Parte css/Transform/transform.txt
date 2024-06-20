@@ -1,0 +1,20 @@
+transform: se usa para transformar el objeto.
+
+1) transform: traslate(x / y): traslate es un acortador que se usa para mover el objeto en 
+    los ejes x / y se puede mover con medidas fijas y con porcentajes 
+    que dependiendo del tamaño del objeto sera la distancia en que se
+    mueva.
+
+2) transform: scale: se usa para el tamaño del objeto hacerlo mas 
+    grande o mas pequeño dependiendo de lo que se le otorgue en la
+    escala que toma como referencia el objeto inicial tambien se 
+    usa el scale en (x / y) pero es scale solo es un acortador.
+
+3) transform: skew: se usa para darle forma al objeto dependiendo del 
+    angulo para inclinar el objeto en diagonal dependiendo de los
+    grados que se le de, tambien se le puede dar (radianes o gradinaes)
+    pero lo mas comun es darle grados.
+
+4)clip-path: polygon: se usa para dar forma de figuras a los 
+    objetos dependiendo de la figura que se nombre y el porcentajes
+    de las medidas que se le de.

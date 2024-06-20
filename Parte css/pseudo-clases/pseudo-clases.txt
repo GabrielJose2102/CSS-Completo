@@ -1,0 +1,19 @@
+las pseudo clases son elementos en linea
+
+: hover: se usa para capturar el evento cuando el 
+         mouse esta por encima de un elemento.
+
+: link: se usa para agregar un link que 
+        redirecciona a otra pagina.
+
+: visite: se usa con e link si esta visitado cambia de color si no
+          conserva su color original.
+    
+: active: se usa mientras se esta pulsando el elemento con el click
+          cuando se deja de hacerlo vuelve a su estado anterior.
+
+: focus: se usa cuando el elemento esta seleccionado ahi se activa esta
+         propiedad.
+
+: lang: se usa para dar estilos dependien del lenguaje en se indique
+        que esta la etiqueta.

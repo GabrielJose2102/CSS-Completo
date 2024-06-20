@@ -1,0 +1,30 @@
+flex-box: es una propiedad que se aplica a los contenedores, es decir a 
+las etiquetas padres pero que afecta directamente al contenido, es decir
+a las etiquetaas hijos pero no asi a los a las etiquetas nietos.
+
+flex-box hace que las cajas que estan dentro se comporten de manera flexible
+esto se puede ver como que las cajas que estan dentro de otra caja que
+contiene la propiedad flex-box puede comportarse como un block, inline-block
+o inline sin necesidad de poseer estas propiedad, tambien se peuden hacer 
+rotar hacia cualquiera de los lados, es decir un movimiento flexible dentro
+de la caja contenedora.
+
+    Propiedades:
+
+1.flex-Direction: row - row-reverse - colunm - colunm-reverse
+funcionan para mover los flex-item en forma de columnas o filas
+
+2.flex-wrap: no-wrap - wrap - wrap-reverse
+se usa para que al momento de reducir la resolucion los flex-item que
+vallan quedando fuera de vision actuen como block y ocupen la linea de abajo
+
+3.flex-flow: este funciona como acortador de: flex-direction - flex-wrap
+
+4.justify-content: center, space-arround, space-between space-evenly (main axis)
+se usa para alinear los flex-item dentro del main axis
+
+5.align-item: flex-start, center, flex-end, stretch, baseline (cross axis)
+se usa para alinear los flex-item dentro del cross axis
+
+6.align-content: funciona como align-item pero se usa para mas de una linea 
+                 de elementos.

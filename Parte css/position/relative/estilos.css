@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+/*el posicionamiento relativo se usa para poder mover las cajas contenedoras
+    y que puedan ocupar el espacio de otra y lo que define que caja esta
+    por encima de otra es el z-index el que tenga el mayor valor en el 
+    z-index estara por encima*/
+.caja1{
+    background-color: chartreuse;
+    position: relative;
+    top: 20px;
+    left: 120px;
+    z-index: 60;
+}
+
+.caja2{
+    background-color: chocolate;
+    position: relative;
+    top: -20px;
+    left: 60px;
+}
+
+.caja3{
+    background-color: darkcyan;
+    position: relative;
+    bottom: 60px;
+    left: 30px;
+    z-index: 60;
+}
+
+.caja4{
+    background-color: darkslateblue;
+    position: relative;
+    bottom: 120px;
+
+}
+
+/*cuando se tiene una caja padre y una hijo la caja hijo no puede estar por
+    debajo de la caja padre de la misma maera que lo hacemos con las cajas
+    que no tienen relacion sino que se debe implementar otra forma para 
+    hacerlo se le debe dar un z-index de -1 a la caja hijo y no darle 
+    z-index a la caja padre para que pueda funcionar esta accion*/
+.contenedor{
+    width: 300px;
+    height: 300px;
+    background: darkslateblue;
+    margin: 40px;
+    position: relative;
+}
+
+.hijo{
+    background: gold;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+}

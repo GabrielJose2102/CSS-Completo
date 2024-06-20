@@ -1,0 +1,5 @@
+grid-template-area: se usa para dividir en areas  las secciones de una pagina 
+    se va colocando entre comillas que seccion de la pagina ocupara 
+    que espacio y dependiendo del espacio que ocurara sera el numero de lineas
+    que estara reflejadas el nombre de esa seccion y luego se indicara usando
+    un selector y el grid-area cual es cada seccion de la pagina.

@@ -1,0 +1,65 @@
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.content{
+    height: 300px;
+    background: #294;
+    padding: 20px 10px;
+}
+
+.caja{
+    height: 150px;
+    width: 150px;
+    background: #13a;
+    margin: 30px;
+    position: relative;
+    animation-name: desplazarse;
+    animation-duration: 2s;
+    animation-iteration-count: 3; 
+    /*si usamos la propiedad
+     infinite se ejecuta la animacion infinitamente*/
+    animation-direction: alternate;
+    /*Direction se usa cambiar la direccion de la animacion y tenemos:
+        (normal, reverse, alternate, alternate-reverse)*/
+    animation-fill-mode: forwards;
+    /* es el modo en el que se ejecutara la animacion
+        backwards, forwards, both*/
+    
+    /*en animacion tambien esta
+        animation-timing-function: ease, ease-in,
+         ease-out, ease-in-out;*/
+}
+
+h1{
+    padding: 60px 40px;
+    text-align: center;
+    color: #fff;
+}
+
+@keyframes desplazarse{
+    /*la animacion tambien se puede ejecutar con:
+
+    from{ 
+        y dentro de esto los estilos y animaciones
+    }
+    
+    to{
+        este es el final como debe terminar la animacion
+    }*/
+    
+    0% {
+        left: 0;
+        background: #aa0;
+    }
+
+    50%{
+        background: #00a;
+    }
+
+    100%{
+        left: 80%;
+        background: #800;
+    }
+}

@@ -1,0 +1,25 @@
+
+*********************
+****grid-dinamico****
+*********************
+
+1) min-content: se usa para que el elemento llegue a un valor especifico
+     y de hay no se haga mas pequeño, asi no se vera influenciado por el 
+     tamaño del contenido.
+
+2) max-content: se usa para darle un valos maximo al elemento y que de 
+    hay no pueda ser mas grande.
+
+3) minmax: es el uso de los dos al mismo tiempo se dan ambos valores
+    separados por una coma.
+
+
+    Uso de las cantidades: (auto-fill y auto-fit)
+
+a) auto-fill: hace que a medida que se agranda el contenedor va comodando
+    los elemtentos y va generando filas y columnas cada vez que se 
+    genra un espacio.
+
+b) auto-fit: cumple casi la misma funcion solo que escala los elemtentos,
+    es decir cada vez que cumple cierto espacio es que se genera la escala
+    de filas y columnas.

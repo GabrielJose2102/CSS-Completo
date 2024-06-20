@@ -1,0 +1,264 @@
+
+        ***********
+        *** CSS ***
+        ***********
+
+
+    __ Conceptos Grid __
+
+
+Grid Es una propiedad de display y se usa para trabajar el layout de la pagina, con grid la trabajamos en forma de grillas(Rejas), esto quiere decir que los elementos se trabajan dentro de Celdas que estas dentro de filas y columnas y a la vez estas estan dentro de un grid container.
+
+1.Grid Container : Es el contenedor del grid que al igual que el display flex cuando aplicamos display grid el contenedor no sufre cambios sino que solos item que estan dentro de ese contenedor el que sufren el cambio.
+
+
+2.Grid Item : Son todos los elementos que estan dentro del grid container y que son hijos directos del contenedor con display grid y OJO estos no son lo mismo que las celdas, ya que los item son los elementos como las etiquetas imagenes y otros tipos que hay y las celdas estan definidas por el numero de filas y columnas que se coloquen.
+
+
+3.Grid Cell : Son cada espacio cuadrado que compone y que dividen la grilla(reja), el numero de celdas lo define el numero de filas y columnas que se coloque en el grid container.
+
+
+4.Grid Tracks (Column y Row) : Son las filas y columnas que hay dentro de cada contenedor grid.
+
+
+5.Grid Area : Un area es cuando una celda ocupa mas de una fila o columna, estas areas la definimos nosotros y para defininirla deben ser en celdas consecutivas tanto en filas como en columna no pueden estar en (diagonal, L, p o cruses) pueden ser en filas y columnas al mismo tiempo pero en espacios cuadrados o rectagulares.
+
+
+6.Grid Line (Column Line y Row Line) : Son las filas y columnas que componen la grilla(reja) del grid container cada una de las column line y row line se empiazan a contar desde las esquina del contenedor.
+
+
+
+    -- Propiedades --
+
+Una vez que aplicamos el display grid al contenedor en automatico todos los elementos hijos se convierten en grid-item los cuales los podemos modificar con las siguiente propiedades.
+
+1.grid-templete-rows (Grid container) : Se usa para crear filas dentro del contenedor, dandole la medida de la fila o filas que tendra.
+
+
+2.grid-templete-columns (Grid container) : Se usa para crear columnas dentro del contenedor, dandole la medida de la columna o columnas que tendra.
+
+Unidades "auto" y fr : El fr se usa para repartir el espacion que puede tener la grilla ya sea entre fila o columna, es decir las filas o columnas que sean de medidad fr no poseeran una medida fija sino que dependera del tamano del contenedor y el espacion que ocupen las demas filas o columnas.
+
+
+repeat (cantidad, tamaño/s) : Se usa para crear varias filas o columnas a la vez solo hay que indicarle la cantidad y el tamaño que tendra y de esta manera abreviamos el escribir una por una las filas o columnas solo lo colocamos en repeat las medidas y la cantidad de veces que se colocara.
+
+
+
+3.grid-row-gap (Grid container) : Se usa para separar las filas unas de otras la distancia que le indiquemos pero estas no se separaran de los bordes del contenedor.
+
+
+4.grid-column-gap (Grid container) : Se usa para separar las columnas unas de otras la distancia que le indiquemos pero estas no se separaran de los bordes del contenedor.
+
+
+5.grid-gap : row - column (Grid container) : Es un acortador de (grid-row-gap - grid-column-gap) que se usa para separar los grid-item entre ellos se coloca la distancia que se separaran uno de otro, pero estos no se separaran de los bordes del contenedor.
+
+
+
+6.grid-row-start (Grid item) : Se usa en el item para indicar desde que linea de las filas empieza el espacio de este item.
+
+
+7.grid-row-end (Grid item) : Se usa en el item para indicar hasta que linea de las filas terminara el espacio de este item.
+
+
+8.grid-column-start (Grid item) : Se usa en el item para indicar desde que linea de las columnas empieza el espacio de este item.
+
+
+9.grid-column-end (Grid item) : Se usa en el item para indicar hasta que linea de las columnas terminara el espacio de este item.
+
+
+10.grid-row (Grid item) : Es un acortador de (grid-row-start - grid-row-end) se usa para modificar la cantidad de filas que ocupara el item dentro del contenedor, pudiendo incluso desplazar otros item de ser necesario hacia otras filas.
+
+
+11.grid-column (Grid item) : Es un acortador de (grid-column-start - grid-column-end) se usa para modificar la cantidad de columnas que ocupara el item dentro del contenedor, pudiendo incluso desplazar otros item de ser necesario hacia otras columnas.
+
+
+   -- Uso de Span  con (grid-row - grid-column) --
+
+Se coloca desde que linea arracara el item y se coloca "span" mas el numero de columnas o filas que ocupara para que tomando el punto de partida ya establecido tome filas y columnas y no sea linea por linea.
+
+
+
+
+    -- Grid Implicito y Explicito --
+
+Grid Implicito : Es el espacio que esta incluido en el contenedor pero sin ser expresado al menos que se le agreguen mas elementos que se salgan de las filas o columnas que ya se establecieron.
+
+    -- Propiedades del Grid Implicito --
+
+
+1.grid-auto-row (Igual que el template) : Es la forma de hacer que se generen filas automaticas en el espacio implicito si hay mas item que estan quedando por fuera.
+
+
+2.grid-auto-column (Igual que el template) : Es la forma de hacer que se generen columnas automaticas en el espacio implicito si hay mas item que estan quedando por fuera.
+
+
+3.grid-auto-flow Row(default), Column y Dense : Se usa para rellenar los huecos que quedan cuando hacemos que celdas ocupen mas espacio que el predeterminado por nosotros, esto hace que se creen mas filas o columnas en el espacio implicito rompiendo la figura de la grilla y hay el dense hace que se rellene esos espacios.
+
+
+
+    -- Grid Dinamico --   (Quede aqui)
+
+Hace que la grilla y su contenido se ajusten al tamaño del contenedor y que si se hace grande el contenedor se hara grande el contenido y si se reduce el contenido tambien lo hara y se ajustara dependiendo del tamaño.
+
+
+1.minmax() : Se usa para establecer un minimo y un maximo en el tamaño que tendra el contenido dentro de la grilla, pasandole dos parametros de medidas que son el minimo de tamaño que puede tener y el maximo de tamaño que puede llegar.
+
+
+2.min-content : Hace que la celda se ajuste al minimo de tamaño donde quepa su contenido y que pueda tener espacio  para que entre su celda.
+
+
+3.max-content : Hace que la celda se ajuste al maximo de tamaño donde una linea completa de su contenido que en la celda completamente de hay no se reducira mas de tamaño esa celda.
+
+**cantidad** 
+
+5.auto-fill : Se usa para que genere columnas dinamicamente, las va generando a medida de que se valla haciendo mas espacio en el contenedor y el espacio es suficiente genera otra columna, si el espacio no es suficiente reparte el espacion que hay entre las otras columnas de ser necesario.
+
+
+6.auto-fit : Es parecido a auto-fill pero esta propiedad cuando se acaban los item y quedan en una sola linea y el contenedor se sigue haciendo mas grande escala los item, es decir los hace mas grande para que abarquen el tamaño de fila.
+
+Igual crea mas columnas pero cuando todos los item estan en una sola columna y sigue incrementando el espacio del contenedor hace los item mas grandes para que se ajusten a la fila.
+
+
+
+
+    ** Alineacion y Control de Flujo **
+
+Diferencia con flex :
+
+_La alineacion es dentro de cada celda y no alineacion total del flex container.
+
+_Cada celda seria un "flex container".
+
+
+
+    -- Propiedades del grid Container --
+
+
+     ** Propiedades para mover los items dentro de las filas **
+
+
+Estas propiedades seran efectivas siempre y cuando haya espacion en la fila o columna para mover el item sino no.
+
+
+1.justify-items (Horizontalmente) : Se encarga de mover los items dentro de las columnas en el eje Horizontal, solo los items.
+
+
+a.stretch (default) : Es la propiedad que trae por default.
+
+b.start : Mueve el item hacia el inicio de su columna en el eje Horizontal.
+
+c.center : Centra el item en el medio de su columna dejando el mismo espacio de separacion de ambos lado de su columna centrandolo solo en el eje Horizontal.
+
+d.end : Mueve el item hacia el fin de su columna en el eje Horizontal.
+
+
+
+
+2.aling-items (Verticalmente) : Se encarga de mover los items dentro de las filas en el eje vertical, solo los items.
+
+
+a.stretch (default) : Es la propiedad que trae por default.
+
+b.start : Mueve el item hacia el inicio de su fila en el eje vertical.
+
+c.center : Centra el item en el medio de su fila dejando el mismo espacio de separacion de ambos lado de su fila centrandolo solo en el eje vertical.
+
+d.end : Mueve el item hacia el fin de su fila en el eje Horizontal.
+
+
+
+3.place-items : Es un acortado de (aling-items - justify-items).
+
+
+     ** Propiedades Para mover las filas y columnas dentro del contenedor **
+
+
+Estas propiedades seran efectivas siempre y cuando haya espacion en el contenedor para mover las filas u columnas sino no.
+
+
+1.justify-content : Se usa para mover la fila dentro del contenedor en el eje Horizontal.
+
+
+a.stretch (default) : Es la propiedad que trae por default.
+
+b.start : Mueve las columnas hacia el inicio del contenedor en el eje Horizontal.
+
+c.center : Centra las columnas en el medio del contenedor dejando el mismo espacio de separacion de ambos lado del contenedor centrandolo solo en el eje Horizontal.
+
+d.end : Mueve las columnas hacia el fin del contenedor en el eje Horizontal.
+
+e.space-arround : Divide el espacio que hay en el contenedor en partes entre las columnas en el eje horizontal.
+
+f.space-between : Hace que las columnas se separen lo mas que puedan mientra el espacio que haya en el contenedor lo permita solo separa entre columnas y no de las esquinas del contenedor y esto lo hace en el eje horizontal.
+
+g.space-evenly : Separa las columnas en el eje horizontal dandole la misma distancia de ambos lado tanto entre columnas como entre el espacio que hay a las esquinas del contenedor.
+
+
+
+
+
+2.aling-content : Se usa para mover la fila dentro del contenedor en el eje vertical.
+
+a.stretch (default) : Es la propiedad que trae por default.
+
+b.start : Mueve las filas hacia el inicio del contenedor en el eje vertical.
+
+c.center : Centra las filas en el medio del contenedor dejando el mismo espacio de separacion de ambos lado del contenedor centrandolo solo en el eje vertical.
+
+d.end : Mueve las filas hacia el fin del contenedor en el eje vertical.
+
+e.space-arround : Divide el espacio que hay en el contenedor en partes entre las filas en el eje vertical.
+
+f.space-between : Hace que las filas se separen lo mas que puedan mientra el espacio que haya en el contenedor lo permita solo separa entre filas y no de las esquinas del contenedor y esto lo hace en el eje vertical.
+
+g.space-evenly : Separa las filas en el eje vertical dandole la misma distancia de ambos lado tanto entre filas como entre el espacio que hay a las esquinas del contenedor.
+
+
+
+
+    ** Propiedades de manejo indivial de items **
+
+1.aling-self : Se usa para mover los items de manera individual en el eje vertical.
+
+Posee las propiedades (stretch - start - center - end)
+
+
+2.justify-self : Se usa para mover los items de manera individual en el eje horizontal.
+
+Posee las propiedades (stretch - start - center - end)
+
+
+3.place-self : Es un acortado de las propiedades (aling-self - justify-self)
+
+stretch(default) - start- center - end
+
+
+
+4.order (igual que en flex) : Se usa para que cuando se le de un valor dependiendo si es mayor o menor esta antes o despues de otro item, es como el z-index pero esta mueve los item en el eje que apunte el track.
+
+
+
+
+    -- Grid Areas --
+
+Es cuando una celda ocupa uno o mas  espacios dentro de las filas o columnas del contenedor, esto lo hacemos declarando el "grid-template-areas" y colocamos variables en los espacio donde queremos que item ocupe en filas y columnas luego declaramos el grid area dentro del item que le queremos asignar ese espacio y le damos como valor el nombre de la variable.
+
+Una vez usado el grid areas se crean las filas y columnas para que los item con grid area abarquen el espacio indicado con el grid-template.areas.
+
+
+
+    ** nombre a filas y columnas **
+
+Se le puede colocar nombre a las filas y columnas al momento de declararlas en el grid-template esto se hace con corchetes antes de cada linea y se le coloca el nombre dentro de cada corchetes.
+
+
+
+    ** grid-template  Acortador **
+
+Es un acortador que lo usamos para manejar 3 propiedades como lo son:
+
+grid-template-rows
+grid-template-columns
+grid-template-areas
+
+para usar rows y columns se coloca grid-template y se pasa los valores para crear filas y columnas.

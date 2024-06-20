@@ -1,0 +1,160 @@
+
+        ***********
+        *** CSS ***
+        ***********
+
+
+1.Estructura de CSS : Se compone la estructura del (Selector de la etiqueta, Llaves, Propiedad que se añadira y valor de la prioridad).
+
+
+
+2.Selectores : Se usa para seleccionar el elemento al que se le quiere aplicar los atributos css y hay varios tipos de Selectores    (Universal, de tipo, Clases, ID, decendientes y pseudo-clases).
+
+
+
+3.Especificidad : Es la jerarquia que le da css a un selector para ejecutar los estilos y estos van asi en orden decendente (pseudo-elementos, elementos), (atributos, pseudo-clases, clases), (identificadores), (estilos en linea), (!important) cada nivel esta por encima en prioridad del otro, y las jerarquia no es lo mismo que las cascada, ya que la cascada es cuando dos selectore uno se impone sobre el otro porque esta por debajo de el.
+
+Cuando se esta aplicando la jerarquia, la cascada no funciona porque si un selector con mayor gerarquia esta arriba de otro con menos jerarquia no se aplicara los cambios si son el mismo atributo del de abajo, hay desaparece la cascada.
+
+
+
+4.Metodologia BEM (Block, Element, Elemnt--Modifier) : Se usa para evitar problemas de Especificidad ya que al momento de de estructurar el html se van ordenando los elementos con clases de acuerdo si son Block, si son Element o si son Element--Modifier Ejemplo:
+
+    <Block class="bloque">
+        <Element class="bloque__elemento"></Element>
+        <Element class="bloque__elemento"></Element>
+        <Element class="bloque__elemento"></Element>
+        <Element class="bloque__elemento"></Element>
+        <Element class="bloque__elemento"></Element>
+        <Element--Modifier class="bloque__elemento--modificado"></Element--Modifier>
+    </Block>
+
+
+
+5.Unidades de medidas en CSS : Es la forma de medir el tamaño de los elementos html que hay en la pagina, para esto tenemos varios tipos de medidas con los cuales usamos para trabajar el resposive design de la pagina y asi optimizar tanto en pc como en movil. tenemos medidas en:
+
+Pero el control del valor del em lo controla en contenedor del elemento dependiendo del tamaño del contenedor sera el tamaño de la fuente.
+
+En cuanto al % esta medida se trabaja de acuedo a la caja que la contiene.
+
+medidas fijas: (ml, cm, pt, px)
+medidas relativas: (rem, em, %, vh, vw) 1em = 16px, vh = alto de la pagina, vw = ancho de la pagina.
+
+
+
+6.Propiedades de texto : Se usan para manejar los estilos de las letras que contiene la pagina.
+
+Para controlar los estilos de la letra usamos : (font-size, font-family, line-heigth, font-weigth, font-stretch, font-variant) entre otros.
+
+Aparte de esto podemos cambiar el color de letra, adornarla y mas.
+
+font-size : Se encarga del tamaño de la letra.
+
+font-family : Se encarga de la tipografia de la fuente.
+
+line-heigth : Es el espacio que ocupa en la linea el valor que se le da se divide en la mitad para arriba y la otra mitad para abajo.
+
+font-weigth : Maneja el grosor de la letra, mientras mas alto es el valor mas gruesa es la letra.
+
+color : Lo usamos para cambiar el color de la letra.
+
+
+
+7.Tipografias Externas : Son las diferente apariencias que se le puede dar a las letras y podemos encontras estas fuente en googlefont.
+
+
+
+8.Normalize : Es un archivo optimizado que reiniciar los estilos que trae por defecto los navegadores, esto se hace para que podamos estaablecer nuestros propios estilos desde cero y asi poder controlar el 100% la apariencia de la pagina.
+
+
+
+9.Cajas : Son representadas por 2 tipos en bloques y en linea.
+Los elementos que son en bloque ocupan el 100% del ancho de su contenedor y solo puede haber uno de ellos dentro de una linea del contenedor, mientras que los elementos que son en linea solo ocupan el ancho del tamaño de su contenido en el contenedor donde se encuentren y puede haber varios en la misma linea del contenedor.
+
+Estos elementos son modificables, asi que se pueden hacer bloques los que son en linea y hacer en linea los que son bloques.
+
+Dato: Los elementos en linea no se le puede dar heigth ni width y a los elementos en bloque si. 
+
+
+        __ Propiedades de Cajas __
+
+a.Text-align : Se usa para ajustar la posicion del texto dentro de la caja.
+
+b.Tamaño : Es la posibilidad de ajustar el tamaño de la caja dependiendo del su contenedor y esto se hace con heigth y width.
+
+c.background : Se usa para cambiar el color de fondo o agregar imagenes ademas de otras modificaciones a la caja.
+
+d.color : Se usa para cambiar el color del texto en el interior de la caja.
+
+e.border : Se usa para aplicar estilos a los bordes de la caja, estos bordes son el espacio que delimita el espacio de la caja y posee atributos como: (color, grosor entre otros).
+
+f.border-radius : Se usa para redondear el estilo de los bordes de la caja esto se puede hacer con medidas.
+
+g.padding : Es la distancia que hay por dentro entre un elemento y su caja contenedora.
+
+h.margin : Es el espacio que hay por fuera de la caja, es decir que es el espacios que existe entre cajas y este espacio esta por los cuatro costados y se ajustan los 4 individuales o se pueden ajustar en los ejes (x, y), solo uno tambien se puede.
+
+i.box-shadow : se usa para añadir efectos de sombras a la caja y los atributos que se usan para estos efectos son :
+
+a.Movimiento que tendra la sombra en el eje x.
+b.Movimiento que tendra la sombra en el eje y.
+c.Radio de desenfoque que poseera.
+d.Dispersion de la sombra.
+e.Color de la sombra.
+
+j.text-shadow : Son los estilos de sombras que se le puede aplicar a el texto y este solo posee 4 propiedades, no posee la dispersion de la sombra.
+
+
+
+
+10.box-sizing : Se usa para establecer las especificaciones que poseera el ancho o alto de la caja con dos atributos.
+
+a.content-box : toma los espacios extras como padding que puedan hacer la caja mas grande y si lo hay esto se le sumara al tamaño de la caja y por ende el tamaño definido sera mayor al acorado.
+
+b.border-box : Toma los espacios extras y en vez de sumar y hacer que el tamaño de la caja sea mayor al acordado, estos espacios los aplica dentro del espacio definido de la caja.
+
+
+
+11.Box model : Esta compuesto por todos los espacios que conforman la caja, tanto por dentro como por fuera estos espacios son (Content, padding, border, margin) y cada uno de esto tiene su jerarquia y posicion en la caja.
+
+a.Content : Es el espacio que tiene el texto y este se puede modificar con el line-heigth.
+
+b.Padding : Es el espacio que hay entre el texto y el border de la caja contenedora.
+
+c.Border : Es el espacio que delimita todo el espacio de la caja.
+
+d.Margin : Es el espacio que hay entre cajas, es decir po fuera de la caja. 
+
+
+
+12.outline : Es la forma de mostrar el border pero sin que ocupe espacio para que la caja no mida mas de lo establecido, con "outline" remarcamos los bordes de las cajas pero como no ocupamos mas espacio para esto no es necesario mover las demas cajas ya que no se ocupa espacio extra, el outline es el que traen por defecto los input text. 
+
+Esto lo que hace es remarcar los bordes que se vean pero no se cuentan como medida.
+
+
+
+13.position : Cada caja ocupa un espacio definido y de esta manera es la forma de manejar las posiciones de las cajas en la pagina para esto tenemos: (static, relative, absolute, fixed, sticky).
+
+a.Static : Se considera que no esta posicionado ya que no adquiere las propiedades que con las otras 4 si.
+
+b.Relative : Quiere decir que su posicion es relativa y puede moverse por encimas de las demas cajas, puede posicionarse por encima de otra caja y las caja las podemos mover con top, bottom, left, rigth y le damos medidas a estos atributos de esta manera se movera contando desde el espacio que ocupa originalmente.
+
+Cada caja tiene una posicion reservada que ocupa en el espacio de la pagina.
+
+Una vez especificada 2 de las cuatros propiedades top y left que son no se puede asignar bottom y rigth, por eso es recomendable aplicar medidas solo 2 de las propiedades por que las 4 no funcionan.
+
+c.Absolute : Funciona casi igual al relative pero tienes 3 diferencias.
+
+Cuando se da la propiedad "absolute" el espacio reservado que posee cada caja desaparece, esto hace que si hay otra caja que venga despues ocuparan la posicion de la caja que tenga la propiedad absolute.
+
+Tambien cuando se posee la propiedad absolute se toma el punto de partida de la caja basandosee en el punto 0 del contenedor o el viewport y no desde el punto donde esta posicionada la caja. 
+
+Si no se le asignan medidas a la caja su posicionamiento se guiara por el contenedor donde se encuentre, pero si se le asigna ya sea (top, bottom, left o rigth) su posicionamiento dependera del viewport.
+
+d.fixed : Es casi igual a absolute solo que con el fixed queda fijada la caja y al momento de hacer scroll la caja o contenido que se le aplico fixed no se ira con el scroll y queda fija en la pantalla a medida que vas bajando en la pagina y le puedes dar posicionamiento con (top, bottom, left, rigth).
+
+e.sticky : Es parecido a relativa y fixed ya que conserva su espacio reservado como el relativa y se puede establecer en que momento en la pagina se quedara fijo como el fixed se comporta como fixed en el punto de la pagina que se le indique.
+
+
+
+14.z-index : Es la forma que usamos para indicar el posicionamiento de las cajas, cual va por encima de cual, estara por delante la caja con el z-index con el mayor valor. 

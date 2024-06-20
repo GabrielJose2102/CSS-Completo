@@ -1,0 +1,23 @@
+1. ::first-line: no funciona en elementos inline y afecta solo a la primera
+                 linea. haciendo que se le pueda agregar propiedades que se 
+                 mantendran solo en la primera linea sin importar que esta 
+                 se haga mas pequeña porque se minimizo la pestaña de la 
+                 pagina.
+
+2. ::first-letter: esta funciona igual que first-line pero solo con la primera
+                   letra.
+
+3. ::placeholder: Para dar estilo al valor establecido con la propiedad 
+                  placeholder de html.
+
+4. ::selection: Es cuando se selecciona con el mouse un atributo esto se 
+                puede dar estilo con selection.
+
+5. ::before: se usa para agregar contenido dentro de una etiqueta pero 
+             pero antes del contenido original de la etiqueta para 
+             esto se usa la propiedad "content" en la cual se agrega
+             el contenido que quieres que aparesca antes y tambien puedes 
+             dar estilo a ese contenido.
+
+6. ::after: funciona igual a before solo que el contenido que se 
+            agrega despues del contenido original de la etiqueta. 
